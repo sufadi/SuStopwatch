@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.su.stopwatch.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll_stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="doStart"
+            android:text="Start" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="doPause"
+            android:text="Pause" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="doReset"
+            android:text="Reset" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_stopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_stopwatch">
+
+        <com.su.stopwatch.stopwatch.StopwatchCircleView
+            android:id="@+id/stopwatch_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.su.stopwatch.stopwatch.StopwatchCircleView>
+
+        <com.su.stopwatch.timer.CountingTimerView
+            android:id="@+id/stopwatch_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.su.stopwatch.timer.CountingTimerView>
+    </FrameLayout>
+
+</RelativeLayout>
