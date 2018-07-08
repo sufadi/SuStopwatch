@@ -1,5 +1,5 @@
-### Ãë±í(Stopwatch)
-¾«×¼µÄÃë±íÓ¦ÓÃ(Accurate stopwatch applications)
+### ç§’è¡¨(Stopwatch)
+ç²¾å‡†çš„ç§’è¡¨åº”ç”¨(Accurate stopwatch applications)
 
 ### apk 
 SuStopWatch\bin\SuStopWatch.apk
